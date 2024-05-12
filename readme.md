@@ -75,15 +75,15 @@ This code is an experiment in forecasting volatility using LSTM models. Here's a
 
 The boxplot of the MSE measure distributions related to all of the 28 Dow Jon Stocks from the 4 models shows noticeable noise for LSTM and GARCH model.
 
-![MSE](Images/result1.png)
+![MSE](Images/Result1.png)
 
 The 4 models are plotted on a cumulative chart to visualize the error. LSTM 2 model outperforms GARCH despite the latter's widespread use in solving parametric problems. LSTM 2 also performs slightly better than RNN.
 
-![MSE Comparison](Images/result2.png)
+![MSE Comparison](Images/Result2.png)
 
 LSTM 2 has been chosen as the best forecast and is used to generate the chart for 28 Dow Jones Stocks. BA and AXP are the highest volatile stocks, whereas WMT and VZ stocks have the lowest volatility.
 
-![PV](Images/result3.png)
+![PV](Images/Result3.png)
 
 ### 4.2 Stock Prediction Method
 
@@ -102,7 +102,7 @@ Some Definitions:
 
 - **Principal Components Analysis (PCA)** compresses and reconstructs price movement by reducing dimensions without loss of accuracy, an unsupervised technique in machine learning; 
 
-![pca](Images/pca.png)
+![pca](Images/PCA.png)
 
 - Deep Learning, a subset of machine learning, employs artificial neural networks to interpret data at multiple levels, with **Autoencoder (AE)** learning hidden layers to reduce reconstruction error and capture price movements.
 
@@ -213,7 +213,7 @@ To evaluate the predictive accuracy of the classification tree, test dataset is 
 
 The result indicates a high accuracy of 0.77 which is well beyond the 0.5 baseline for 28 DJIA stocks. This has shown that look-back return of 5-day and 20-day are generally acceptable to use fast period and slow period respectively for Moving Average Convergence Divergence (MACD) in back-testing. 
 
-## 4.4 Back-Testing Model (Reinforcement Learning (RL))
+## 4.4 Back-Testing Model (Reinforcement Learning)
 
 This back-testing model utilizes deep reinforcement learning (RL) to simulate market behavior and optimize trading algorithms. RL aims to maximize long-term rewards by selecting action sequences. Compared to decision trees, RL is better suited for learning trading rules and can be enhanced further by integrating with deep learning (DL) to capture complex data features.
 
@@ -242,7 +242,7 @@ The 20-day and 5-day Moving Average Convergence Divergence (MACD) is a widely em
    - Buy Entry: >-0.2
    - Buy Exit: >-0.05
 
-Example of AAPL Stock in MACD:
+Example of AAPL Stock, using MACD:
 
 ![macd](Images/macd.png)
 
@@ -253,9 +253,12 @@ Example of AAPL Stock in MACD:
 3. **Prepare Dataset**: Prepare the dataset by calculating the MACD (Moving Average Convergence Divergence) and scaling features.
 4. **Implement MACD Trading Strategy**: Implement the MACD trading strategy using the calculated MACD values.
 5. **Create and Train the Agent**: Create an agent using the Agent class and train it using the prepared dataset.
-6. **Run the Agent**: Run the agent to train it and save the checkpoints.
+6. **Run the Agent**: Run the agent to train it and save the checkpoints. The following is the example of the reward:
+![aaplvsmsft](Images/reward.png)
 7. **Evaluate the Model**: Evaluate the trained agent by making predictions on the test data and calculating accuracy, precision, recall, and F1-score.
 8. **Plot Strategy**: Plot the true and predicted trading positions to visualize the performance of the model.
+
+![aaplvsmsft](Images/strategy.png)
 
 ### Results
 
