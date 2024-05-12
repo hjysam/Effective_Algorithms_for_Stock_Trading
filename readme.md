@@ -47,7 +47,7 @@ Let's see which model gives the most accurate forecast for volatility.
 
 ![volatility](Images/volatility.png)
 
-This code is an experiment in forecasting volatility using LSTM models. Here's an overview of the steps and concepts involved:
+This code is forecasting volatility using LSTM models. Here's an overview of the steps and concepts involved:
 
 ### Model Development
 
@@ -139,7 +139,7 @@ Time series plotted below which shown that TEMA5 is better method as compared to
 
 ![time series 1](Images/ts1.png)
 
-Even compare to Pearson correlation, TEMA5, it is about 1 as compare to PCA and AE. So it is confirm that the best prediction method for experiment 2. 
+Even compare to Pearson correlation, TEMA5, it is about 1 as compare to PCA and AE. So it is confirm that the best prediction method.
 
 
 ![correlation](Images/cor.png)
@@ -235,7 +235,7 @@ This back-testing model utilizes deep reinforcement learning (RL) to simulate ma
 
 ### Moving Average Convergence Divergence (MACD)
 
-The 20-day and 5-day Moving Average Convergence Divergence (MACD) is a widely employed trading signal, especially for short-term trading. With a confirmed accuracy of 0.77 from the Decision Tree experiment, it acts as a reliable momentum indicator for generating entry and exit signals.
+The 20-day and 5-day Moving Average Convergence Divergence (MACD) is a widely employed trading signal, especially for short-term trading. With a confirmed accuracy of 0.77 from the Decision Tree, it acts as a reliable momentum indicator for generating entry and exit signals.
 
    - Sell Entry: >0.2
    - Sell Exit: < 0.05 
